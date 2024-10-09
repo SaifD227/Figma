@@ -99,6 +99,13 @@ const Navbar: React.FC<NavbarProps> = ({
           >
             <LuBellDot className="text-red-600 text-2xl" />
           </button>
+
+          <button
+            className="bg-gray-100 p-2 rounded-full relative"
+            aria-label="Notifications"
+          >
+            new branch
+          </button>
           <Image
             src={image}
             alt="avatar"
