@@ -81,10 +81,20 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen }) => {
           </Link>
         </li>
         <li>
-          <button className="flex gap-4 border-l-8 border-transparent hover:border-blue-600 p-2 items-center text-gray-600 cursor-pointer rounded group w-full text-left">
-            <LoanIcon className="w-6 h-6 ml-6 group-hover:text-blue-600" />
-            <p className="ml-2 group-hover:text-blue-600">Loans</p>
-          </button>
+          <Link href="/Loans">
+            <button className="flex gap-4 border-l-8 border-transparent hover:border-blue-600 p-2 items-center text-gray-600 cursor-pointer rounded group w-full text-left">
+              <LoanIcon className="w-6 h-6 ml-6 group-hover:text-blue-600" />
+              <p className="ml-2 group-hover:text-blue-600">Loans</p>
+            </button>
+          </Link>
+        </li>
+        <li>
+          <Link href="/Services">
+            <button className="flex gap-4 border-l-8 border-transparent hover:border-blue-600 p-2 items-center text-gray-600 cursor-pointer rounded group w-full text-left">
+              <UserIcon className="w-6 h-6 ml-6 group-hover:text-blue-600" />
+              <p className="ml-2 group-hover:text-blue-600">Services</p>
+            </button>
+          </Link>
         </li>
         <li>
           <button className="flex gap-4 border-l-8 border-transparent hover:border-blue-600 p-2 items-center text-gray-600 cursor-pointer rounded group w-full text-left">
