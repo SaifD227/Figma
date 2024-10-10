@@ -1,6 +1,8 @@
 import Card1 from "../components/Cards/Card1";
 import Card2 from "../components/Cards/Card2";
+import AddNewCard from "./AddNewCard";
 import CardExpensestatistics from "./CardExpensestatistics";
+
 
 const CreditCard = () => {
   return (
@@ -13,6 +15,7 @@ const CreditCard = () => {
         </div>
       </div>
       <CardExpensestatistics />
+        <AddNewCard />
     </div>
   );
 };

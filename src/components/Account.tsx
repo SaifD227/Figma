@@ -5,6 +5,7 @@ import { FaSackDollar, FaCircleDollarToSlot } from "react-icons/fa6";
 import LastTransaction from "./LastTransaction";
 import DebitCredit from "./Debit&Credit";
 
+
 const Account = () => {
   return (
     <div className="bg-gray-100 top-28 left-0 w-full z-10 md:left-60 md:w-[calc(100%-15rem)] absolute">
@@ -51,6 +52,7 @@ const Account = () => {
       </div>
       <div>
         <DebitCredit />
+    
       </div>
     </div>
   );

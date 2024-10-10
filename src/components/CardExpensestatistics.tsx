@@ -27,15 +27,15 @@ const CardExpensestatistics = () => {
   return (
     <div className="flex flex-col md:flex-row mt-6 mx-4 gap-6">
       <div className="flex-grow flex flex-col h-full">
-        <h1 className="text-xl text-blue-950 mb-4">Card Expense Statistics</h1>
-        <div className="flex-grow flex items-center justify-center">
+        <h1 className="text-xl text-blue-950 mb-6">Card Expense Statistics</h1>
+        <div className="flex-grow h-80 flex items-center justify-center">
           <PieChart />
         </div>
       </div>
 
       <div className="mx-2 flex-shrink-0 flex flex-col">
-        <h1 className="mb-4 text-xl text-blue-950">Card List</h1>
-        <div className="flex-grow space-y-4 md:space-y-8">
+        <h1 className="mb-6 text-xl text-blue-950">Card List</h1>
+        <div className="flex-grow space-y-5 md:space-y-8">
           {cardData.map((card) => (
             <div
               key={card.cardNumber}  // Using card number as the unique key
