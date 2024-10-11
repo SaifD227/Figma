@@ -12,34 +12,34 @@ const BankServiceList = () => {
 
       {/* Card 1 */}
       <div className="flex items-center justify-between bg-white p-2 rounded-lg shadow-md gap-4 mb-4">
-  <div className="flex items-center gap-4">
-    <div className="bg-green-100 p-4 rounded-full">
-      <LoanIcon className="w-12 h-12 text-red-600" /> {/* Changed color */}
-    </div>
-    <div>
-      <h1 className="text-xl font-semibold">Business Loans</h1>
-      <p className="text-blue-300">It is a long established</p>
-    </div>
-  </div>
-  <div className="hidden lg:block">
-    <h1 className="text-xl font-semibold">Lorem Ipsum</h1>
-    <p className="text-blue-300">Many Publishing</p>
-  </div>
-  <div className="hidden lg:block">
-    <h1 className="text-xl font-semibold">Lorem Ipsum</h1>
-    <p className="text-blue-300">Many Publishing</p>
-  </div>
-  <div className="hidden lg:block">
-    <h1 className="text-xl font-semibold">Lorem Ipsum</h1>
-    <p className="text-blue-300">Many Publishing</p>
-  </div>
-  <div>
-    <button className="border border-blue-600 text-blue-600 px-4 py-2 rounded-full hover:bg-blue-600 hover:text-white transition">
-      View Details
-    </button>
-  </div>
-</div>
-
+        <div className="flex items-center gap-4">
+          <div className="bg-green-100 p-4 rounded-full">
+            <LoanIcon className="w-12 h-12 text-red-600" />{" "}
+            {/* Changed color */}
+          </div>
+          <div>
+            <h1 className="text-xl font-semibold">Business Loans</h1>
+            <p className="text-blue-300">It is a long established</p>
+          </div>
+        </div>
+        <div className="hidden lg:block">
+          <h1 className="text-xl font-semibold">Lorem Ipsum</h1>
+          <p className="text-blue-300">Many Publishing</p>
+        </div>
+        <div className="hidden lg:block">
+          <h1 className="text-xl font-semibold">Lorem Ipsum</h1>
+          <p className="text-blue-300">Many Publishing</p>
+        </div>
+        <div className="hidden lg:block">
+          <h1 className="text-xl font-semibold">Lorem Ipsum</h1>
+          <p className="text-blue-300">Many Publishing</p>
+        </div>
+        <div>
+          <button className="border border-blue-600 text-blue-600 px-4 py-2 rounded-full hover:bg-blue-600 hover:text-white transition">
+            View Details
+          </button>
+        </div>
+      </div>
 
       {/* Card 2 */}
       <div className="flex items-center justify-between bg-white p-2 rounded-lg shadow-md gap-4 mb-4">

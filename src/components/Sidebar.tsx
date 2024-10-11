@@ -11,7 +11,6 @@ import CreditCardIcon from "../../public/icons/CreditCardIcon";
 import SettingsIcon from "../../public/icons/SettingsIcon";
 import InvestIcon from "../../public/icons/InvestIcon";
 import TransferIcon from "../../public/icons/TransferIcon";
-import { BsLightbulbOffFill } from "react-icons/bs";
 
 interface SidebarProps {
   isOpen?: boolean;
@@ -21,7 +20,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen }) => {
   return (
     <div
       style={{ zIndex: 99 }}
-      className={`bg-white fixed text-lg h-screen w-60 shadow-lg flex flex-col transition-transform duration-300 ${
+      className={`bg-white  dark:bg-medium fixed text-lg h-screen w-60 shadow-lg flex flex-col transition-transform duration-300 ${
         isOpen ? "translate-x-0" : "-translate-x-full"
       } md:translate-x-0`}
     >
@@ -97,16 +96,12 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen }) => {
           </Link>
         </li>
         <li>
-          <button className="flex gap-4 border-l-8 border-transparent hover:border-blue-600 p-2 items-center text-gray-600 cursor-pointer rounded group w-full text-left">
-            <SettingsIcon className="w-5 h-5 ml-6 group-hover:text-blue-600" />
-            <p className="ml-2 group-hover:text-blue-600">Settings</p>
-          </button>
-        </li>
-        <li>
-          <button className="flex gap-4 border-l-8 border-transparent hover:border-blue-600 p-2 items-center text-gray-600 cursor-pointer rounded group w-full text-left">
-            <BsLightbulbOffFill className="w-5 h-5 ml-6 group-hover:text-blue-600" />
-            <p className="ml-2 group-hover:text-blue-600">My Privilege</p>
-          </button>
+          <Link href="/Settings">
+            <button className="flex gap-4 border-l-8 border-transparent hover:border-blue-600 p-2 items-center text-gray-600 cursor-pointer rounded group w-full text-left">
+              <SettingsIcon className="w-5 h-5 ml-6 group-hover:text-blue-600" />
+              <p className="ml-2 group-hover:text-blue-600">Settings</p>
+            </button>
+          </Link>
         </li>
       </ul>
     </div>

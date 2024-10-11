@@ -3,6 +3,7 @@ import UserIcon from "../../public/icons/UserIcon";
 import CreditCardIcon from "../../public/icons/CreditCardIcon";
 import { FaDownload } from "react-icons/fa";
 import { IoMdSettings } from "react-icons/io";
+import LoanTable from "./LoanTable";
 
 const Service = () => {
   return (
@@ -60,6 +61,7 @@ const Service = () => {
           </div>
         </div>
       </div>
+      <LoanTable/>
     </div>
   );
 };
