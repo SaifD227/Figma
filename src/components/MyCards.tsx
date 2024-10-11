@@ -12,7 +12,7 @@ const MyCards = () => {
   return (
     <div>
       <div className="">
-        <div className="h- bg-gray-100 top-24 left-0 w-full z-10 md:left-60 md:w-[calc(100%-15rem)]  absolute">
+        <div className="h- bg-gray-100 dark:bg-medium top-24 left-0 w-full z-10 md:left-60 md:w-[calc(100%-15rem)]  absolute">
           <div className="flex flex-col md:flex-row  ">
             <div className="2Card flex mt-10 mx-5 gap-12">
 

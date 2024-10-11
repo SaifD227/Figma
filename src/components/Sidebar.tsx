@@ -20,7 +20,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen }) => {
   return (
     <div
       style={{ zIndex: 99 }}
-      className={`bg-white fixed text-lg h-screen w-60 shadow-lg flex flex-col transition-transform duration-300 ${
+      className={`bg-white  dark:bg-medium fixed text-lg h-screen w-60 shadow-lg flex flex-col transition-transform duration-300 ${
         isOpen ? "translate-x-0" : "-translate-x-full"
       } md:translate-x-0`}
     >

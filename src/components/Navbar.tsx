@@ -1,10 +1,11 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 import { IoSearchOutline, IoSettingsOutline, IoMenu } from "react-icons/io5";
 import { LuBellDot } from "react-icons/lu";
 import { GiMoon } from "react-icons/gi";
 import Image from "next/image";
 import image from "../../public/assets/avatar-CDT9_MFd.jpg";
+import ThemeToggle from "./ThemeToogle";
 
 interface NavbarProps {
   toggleSidebar?: () => void;
@@ -15,10 +16,10 @@ const Navbar: React.FC<NavbarProps> = ({
   toggleSidebar,
   setDashboardColor,
 }) => {
-  const [isSettingsActive, setIsSettingsActive] = useState(false);
+  const [isSettingsActive, setIsSettingsActive] = useState(true);
 
   const handleSettingsClick = () => {
-    const newActiveState = !isSettingsActive;
+    const newActiveState = isSettingsActive;
     setIsSettingsActive(newActiveState);
     if (setDashboardColor) {
       setDashboardColor(newActiveState);
@@ -26,7 +27,7 @@ const Navbar: React.FC<NavbarProps> = ({
   };
 
   return (
-    <div className="bg-white shadow-md py-8 fixed top-0 left-0 w-full z-50 flex flex-col md:flex-row justify-between items-center md:left-60 md:w-[calc(100%-14rem)]">
+    <div className="bg-white dark:bg-medium shadow-md py-8 fixed top-0 left-0 w-full z-50 flex flex-col md:flex-row justify-between items-center md:left-60 md:w-[calc(100%-14rem)]">
       <div className="flex justify-between items-center w-full md:w-auto">
         <div className="flex items-center">
           <button
@@ -86,11 +87,12 @@ const Navbar: React.FC<NavbarProps> = ({
             aria-pressed={isSettingsActive}
             aria-label="Settings"
           >
-            {isSettingsActive ? (
+            {/* {isSettingsActive ? (
               <GiMoon className="text-red-600 text-2xl" />
             ) : (
               <IoSettingsOutline className="text-gray-500 text-2xl" />
-            )}
+            )} */}
+            <ThemeToggle />
           </button>
 
           <button
