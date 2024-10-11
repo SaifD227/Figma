@@ -1,8 +1,5 @@
-
-
 "use client";
 import { useState, useEffect } from "react";
-
 
 type Loan = {
   loanMoney: number;
@@ -15,10 +12,9 @@ type Loan = {
 export default function LoanTable() {
   const [loans, setLoans] = useState<Loan[]>([]);
   const [totalRepay, setTotalRepay] = useState<number>(0);
-  const [error, setError] = useState<string | null>(null); 
+  const [error, setError] = useState<string | null>(null);
 
   // Simulated loan data (replaces the API call)
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   const loanData: Loan[] = [
     {
       loanMoney: 5000,
@@ -78,20 +74,19 @@ export default function LoanTable() {
     },
   ];
 
- 
   useEffect(() => {
     try {
       setLoans(loanData);
 
-
       const total = loanData.reduce((acc, loan) => acc + loan.leftToRepay, 0);
       setTotalRepay(total);
     } catch (err: unknown) {
-      console.error(err); 
+      console.error(err);
       setError("Failed to fetch loan data");
     }
-  }, [loanData]); 
-
+    // Remove loanData from the dependency array
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []); // Only run on component mount
 
   if (error) {
     return <div className="text-red-500">Error: {error}</div>;
@@ -107,18 +102,32 @@ export default function LoanTable() {
         <table className="min-w-full table-auto border-collapse border border-gray-300">
           <thead>
             <tr className="bg-gray-200">
-              <th className="border border-gray-300 px-2 py-2 md:px-4 md:py-2">Sl No</th>
-              <th className="border border-gray-300 px-2 py-2 md:px-4 md:py-2">Loan Money</th>
-              <th className="border border-gray-300 px-2 py-2 md:px-4 md:py-2">Left to Repay</th>
-              <th className="border border-gray-300 px-2 py-2 md:px-4 md:py-2">Duration (months)</th>
-              <th className="border border-gray-300 px-2 py-2 md:px-4 md:py-2">Interest Rate (%)</th>
-              <th className="border border-gray-300 px-2 py-2 md:px-4 md:py-2">Installment</th>
+              <th className="border border-gray-300 px-2 py-2 md:px-4 md:py-2">
+                Sl No
+              </th>
+              <th className="border border-gray-300 px-2 py-2 md:px-4 md:py-2">
+                Loan Money
+              </th>
+              <th className="border border-gray-300 px-2 py-2 md:px-4 md:py-2">
+                Left to Repay
+              </th>
+              <th className="border border-gray-300 px-2 py-2 md:px-4 md:py-2">
+                Duration (months)
+              </th>
+              <th className="border border-gray-300 px-2 py-2 md:px-4 md:py-2">
+                Interest Rate (%)
+              </th>
+              <th className="border border-gray-300 px-2 py-2 md:px-4 md:py-2">
+                Installment
+              </th>
             </tr>
           </thead>
           <tbody>
             {loans.map((loan, index) => (
               <tr key={index} className="text-center">
-                <td className="border border-gray-300 px-2 py-2 md:px-4 md:py-2">{index + 1}</td>
+                <td className="border border-gray-300 px-2 py-2 md:px-4 md:py-2">
+                  {index + 1}
+                </td>
                 <td className="border border-gray-300 px-2 py-2 md:px-4 md:py-2">
                   ${loan.loanMoney.toFixed(2)}
                 </td>
@@ -139,7 +148,10 @@ export default function LoanTable() {
           </tbody>
           <tfoot>
             <tr className="font-bold bg-gray-100">
-              <td colSpan={2} className="border border-gray-300 px-2 py-2 md:px-4 md:py-2">
+              <td
+                colSpan={2}
+                className="border border-gray-300 px-2 py-2 md:px-4 md:py-2"
+              >
                 Total
               </td>
               <td className="border border-gray-300 px-2 py-2 md:px-4 md:py-2">
