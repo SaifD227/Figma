@@ -1,6 +1,6 @@
 import React from "react";
 import { FaSackDollar } from "react-icons/fa6";
-import TotalInvestment from "../TotalInvestment";
+import TotalInvestment from "./TotalInvestment";
 import InvestmentLast from "./InvestmentLast";
 
 const Investments = () => {
