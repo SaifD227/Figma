@@ -85,7 +85,7 @@ export default function LoanTable() {
       setError("Failed to fetch loan data");
     }
     // Remove loanData from the dependency array
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // Only run on component mount
 
   if (error) {

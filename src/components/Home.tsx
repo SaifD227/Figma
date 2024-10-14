@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
-import Dashboard from "../components/Dashboard";
+import Dashboard from "../components/Dashboards/Dashboard";
 
 const Home: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
