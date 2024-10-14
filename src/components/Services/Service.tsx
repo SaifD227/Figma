@@ -4,7 +4,7 @@ import { AiTwotoneSafetyCertificate } from "react-icons/ai";
 import { RiShoppingBagFill } from "react-icons/ri";
 import BankServiceList from "./BankServiceList";
 
-const Loan = () => {
+const Service = () => {
   return (
     <div className="bg-gray-100 top-28 left-0 w-full z-10 md:left-60 md:w-[calc(100%-15rem)] absolute py-4">
       <div className="flex flex-col md:flex-row justify-center items-center gap-12 mx-4 flex-wrap">
@@ -46,4 +46,4 @@ const Loan = () => {
   );
 };
 
-export default Loan;
+export default Service;

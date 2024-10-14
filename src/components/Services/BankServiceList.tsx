@@ -1,9 +1,9 @@
 import React from "react";
-import LoanIcon from "../../public/icons/LoanIcon";
+import LoanIcon from "../../../public/icons/LoanIcon";
 import { AiOutlineSafetyCertificate } from "react-icons/ai";
-import CreditCardIcon from "../../public/icons/CreditCardIcon";
+import CreditCardIcon from "../../../public/icons/CreditCardIcon";
 import { MdAccountBalance } from "react-icons/md";
-import UserIcon from "../../public/icons/UserIcon";
+import UserIcon from "../../../public/icons/UserIcon";
 
 const BankServiceList = () => {
   return (
