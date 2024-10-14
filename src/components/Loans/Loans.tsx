@@ -1,11 +1,11 @@
 import React from "react";
-import UserIcon from "../../public/icons/UserIcon";
-import CreditCardIcon from "../../public/icons/CreditCardIcon";
+import UserIcon from "../../../public/icons/UserIcon";
+import CreditCardIcon from "../../../public/icons/CreditCardIcon";
 import { FaDownload } from "react-icons/fa";
 import { IoMdSettings } from "react-icons/io";
 import LoanTable from "./LoanTable";
 
-const Service = () => {
+const Loans = () => {
   return (
     <div className="bg-gray-100 top-28 left-0 w-full z-10 md:left-60 md:w-[calc(100%-15rem)] absolute">
       <div className="flex flex-col md:flex-row gap-6 mx-4 mt-4">
@@ -66,4 +66,4 @@ const Service = () => {
   );
 };
 
-export default Service;
+export default Loans;

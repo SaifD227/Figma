@@ -1,8 +1,8 @@
 import React from "react";
 import { CiBellOff } from "react-icons/ci";
-import UserIcon from "../../public/icons/UserIcon";
-import SettingsIcon from "../../public/icons/SettingsIcon";
-import Card3 from "../components/Cards/Card3";
+import UserIcon from "../../../public/icons/UserIcon";
+import SettingsIcon from "../../../public/icons/SettingsIcon";
+import Card3 from "../../components/Cards/Card3";
 
 const LastTransaction = () => {
   return (

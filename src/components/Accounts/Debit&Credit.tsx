@@ -1,4 +1,4 @@
-import Chart from "../components/MyCharts/Chart";
+import Chart from "../../components/MyCharts/Chart";
 import React from "react";
 import { RiAppleLine, RiAccountCircleLine } from "react-icons/ri";
 

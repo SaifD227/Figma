@@ -1,13 +1,14 @@
 import Image from "next/image";
 import React, { useState } from "react";
-import image1 from "../../public/assets/image-1-BQaU1fzz.png";
-import image2 from "../../public/assets/image-2-C0SRPo6r.png";
-import image3 from "../../public/assets/image-3-CazXWhmY.png";
-import image4 from "../../public/assets/image-4-Dz-1HCyi.png";
-import image5 from "../../public/assets/image-5-Cyb-y21N.png";
-import image6 from "../../public/assets/image-6-Cwr8LWQE (1).png";
-import image7 from "../../public/assets/image-7-DvBfwV9h.png";
-import SimpleLineChart from "../components/MyCharts/SimpleLineChart";
+// import image1 from "../../public/assets/image-1-BQaU1fzz.png";
+import image1 from "../../../public/assets/image-1-BQaU1fzz.png";
+import image2 from "../../../public/assets/image-2-C0SRPo6r.png";
+import image3 from "../../../public/assets/image-3-CazXWhmY.png";
+import image4 from "../../../public/assets/image-4-Dz-1HCyi.png";
+import image5 from "../../../public/assets/image-5-Cyb-y21N.png";
+import image6 from "../../../public/assets/image-6-Cwr8LWQE (1).png";
+import image7 from "../../../public/assets/image-7-DvBfwV9h.png";
+import SimpleLineChart from "../MyCharts/SimpleLineChart";
 import { PiNavigationArrowBold } from "react-icons/pi";
 
 const images = [

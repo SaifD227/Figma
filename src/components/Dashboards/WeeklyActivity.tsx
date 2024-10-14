@@ -1,6 +1,5 @@
-
-import BarChart from "../components/MyCharts/BarChart";
-import PieChart from "../components/MyCharts/PieChart";
+import BarChart from "../MyCharts/BarChart";
+import PieChart from "../MyCharts/PieChart";
 
 const WeeklyActivity = () => {
   return (

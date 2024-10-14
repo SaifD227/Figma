@@ -1,6 +1,6 @@
 import React from "react";
-import PieChart from "../components/MyCharts/PieChart";
-import CreditCardIcon from "../../public/icons/CreditCardIcon";
+import PieChart from "../../components/MyCharts/PieChart";
+import CreditCardIcon from "../../../public/icons/CreditCardIcon";
 
 const CardExpensestatistics = () => {
   const cardData = [

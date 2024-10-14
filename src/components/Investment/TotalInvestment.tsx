@@ -1,7 +1,7 @@
 import React from "react";
-import ChartComponent from "../components/MyCharts/ChartComponent";
+import ChartComponent from "../../components/MyCharts/ChartComponent";
 
-import LargeAreaChart from "../components/MyCharts/LargeAreaChart";
+import LargeAreaChart from "../../components/MyCharts/LargeAreaChart";
 
 
 const TotalInvestment = () => {

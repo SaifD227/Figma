@@ -1,4 +1,4 @@
-import Account from '@/components/Account'
+import Account from '../../components/Accounts/Account'
 import React from 'react'
 
 const Accounts = () => {

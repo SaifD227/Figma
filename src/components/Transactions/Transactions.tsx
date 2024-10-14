@@ -1,7 +1,7 @@
 import React from "react";
-import Card1 from "../components/Cards/Card1";
-import Card2 from "../components/Cards/Card2";
-import MonthChart from "../components/MyCharts/MonthChart";
+import Card1 from "../../components/Cards/Card1";
+import Card2 from "../../components/Cards/Card2";
+import MonthChart from "../../components/MyCharts/MonthChart";
 import PaginatedTable from "./PaginatedTable";
 
 const Transactions = () => {

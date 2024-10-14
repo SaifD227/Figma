@@ -1,4 +1,4 @@
-import CreditCard from "@/components/CreditCard";
+import CreditCard from "../../components/CreditCards/CreditCard";
 
 const CreditCards = () => {
   return (

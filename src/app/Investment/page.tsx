@@ -1,4 +1,4 @@
-import Investments from '@/components/Investments'
+import Investments  from "../../components/Investment/Investments"
 import React from 'react'
 
 const Investment = () => {

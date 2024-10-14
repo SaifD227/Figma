@@ -1,7 +1,3 @@
-
-
-
-
 import React from "react";
 import { CiInboxIn, CiLock } from "react-icons/ci";
 import { TfiApple } from "react-icons/tfi";
@@ -25,7 +21,9 @@ const AddNewCard = () => {
           <div className="space-y-8 flex-grow">
             <div className="flex flex-col md:flex-row gap-4">
               <div className="flex-1">
-                <label className="block text-sm font-medium text-gray-700 mb-1">Card Type</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Card Type
+                </label>
                 <input
                   type="text"
                   placeholder="Classic"
@@ -33,7 +31,9 @@ const AddNewCard = () => {
                 />
               </div>
               <div className="flex-1">
-                <label className="block text-sm font-medium text-gray-700 mb-1">Name On Card</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Name On Card
+                </label>
                 <input
                   type="text"
                   placeholder="My Cards"
@@ -44,7 +44,9 @@ const AddNewCard = () => {
 
             <div className="flex flex-col md:flex-row gap-4">
               <div className="flex-1">
-                <label className="block text-sm font-medium text-gray-700 mb-1">Card Number</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Card Number
+                </label>
                 <input
                   type="text"
                   placeholder="****************"
@@ -52,7 +54,9 @@ const AddNewCard = () => {
                 />
               </div>
               <div className="flex-1">
-                <label className="block text-sm font-medium text-gray-700 mb-1">Expiration Date</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Expiration Date
+                </label>
                 <input
                   type="text"
                   placeholder="25 Jun 2025"
@@ -70,7 +74,9 @@ const AddNewCard = () => {
 
       {/* Smaller Card Setting Section */}
       <div className="w-full md:w-1/3">
-        <h1 className="text-xl text-center mb-6 text-blue-950">Card Settings</h1>
+        <h1 className="text-xl text-center mb-6 text-blue-950">
+          Card Settings
+        </h1>
         <div className="bg-white shadow-lg rounded-lg p-6 md:p-8 flex flex-col h-full md:h-96">
           <div className="space-y-2 flex-grow">
             {/* Block Card */}

@@ -1,4 +1,4 @@
-import Loan from '@/components/Loan'
+import Loan from '../../components/Loans/Loans'
 import React from 'react'
 
 const Loans = () => {

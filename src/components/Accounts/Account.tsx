@@ -1,5 +1,5 @@
 import React from "react";
-import LoanIcon from "../../public/icons/LoanIcon";
+import LoanIcon from "../../../public/icons/LoanIcon";
 import { BsCalendar3WeekFill } from "react-icons/bs";
 import { FaSackDollar, FaCircleDollarToSlot } from "react-icons/fa6";
 import LastTransaction from "./LastTransaction";

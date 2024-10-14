@@ -31,7 +31,7 @@ const Navbar: React.FC<NavbarProps> = ({
       <div className="flex justify-between items-center w-full md:w-auto">
         <div className="flex items-center">
           <button
-            className="md:hidden"
+            className="md:hidden "
             onClick={toggleSidebar}
             aria-label="Toggle Sidebar"
           >
