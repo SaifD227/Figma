@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import React, { useState } from "react";
 // import image1 from "../../public/assets/image-1-BQaU1fzz.png";

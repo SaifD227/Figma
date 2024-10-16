@@ -39,7 +39,7 @@ const BarChart: React.FC = () => {
     ]
   };
 
-  return <ReactECharts option={option} style={{ height: '350px', width: '170%', backgroundColor:'white', }} />;
+  return <ReactECharts option={option} style={{ height: '350px', width: '170%', backgroundColor:'white',borderRadius:"30px"  }} />;
 };
 
 export default BarChart;
