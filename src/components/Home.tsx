@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
-import Dashboard from "../components/Dashboards/Dashboard";
+import Dashboard from "./Dashboards/Dashboard";
 
 const Home: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -17,10 +17,7 @@ const Home: React.FC = () => {
     <div>
       <Sidebar isOpen={isSidebarOpen} />
       <Navbar toggleSidebar={toggleSidebar} />
-
-      <nav>
-        <Dashboard />
-      </nav>
+      <Dashboard/>
     </div>
   );
 };
