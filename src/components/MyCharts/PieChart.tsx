@@ -9,7 +9,7 @@ const PieChart: React.FC = () => {
 
   useEffect(() => {
     if (chartRef.current) {
-      const myChart = echarts.init(chartRef.current); // Initialize ECharts
+      const myChart = echarts.init(chartRef.current); 
 
       const option = {
         tooltip: {
