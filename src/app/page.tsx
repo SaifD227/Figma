@@ -1,13 +1,10 @@
-// import Dashboard from "@/components/Dashboards/Dashboard";
-
-import Home from "@/components/Home";
-
+"use client";
+import Dashboard from "@/components/Dashboards/Dashboard";
 
 export default function Homes() {
   return (
     <div>
-   <Home/>
-      
+      <Dashboard />
     </div>
   );
 }
