@@ -54,9 +54,9 @@ const PieChart: React.FC = () => {
         ],
       };
 
-      myChart.setOption(option); // Set the chart option
+      myChart.setOption(option); 
 
-      // Cleanup function to dispose the chart instance on component unmount
+    
       return () => {
         myChart.dispose();
       };
