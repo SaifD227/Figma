@@ -41,7 +41,7 @@ const Navbar: React.FC<NavbarProps> = ({
   const toggleNotificationDropdown = () => {
     setIsNotificationDropdownOpen((prev) => !prev);
   };
-
+// 
   return (
     <div className="bg-white dark:bg-medium shadow-md py-8 fixed top-0 left-0 w-full z-50 flex flex-col md:flex-row justify-between items-center md:left-60 md:w-[calc(100%-14rem)]">
       <div className="flex justify-between items-center w-full md:w-auto">
@@ -108,7 +108,6 @@ const Navbar: React.FC<NavbarProps> = ({
           >
             <ThemeToggle />
           </button>
-
           <button
             className="bg-gray-100 p-2 rounded-full relative"
             aria-label="Notifications"
